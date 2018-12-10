@@ -25,8 +25,10 @@ if you store in your database only filename you must define public path to your 
 Example: 
 image field: avatar.jpg
 'images_base_path' => 'public_path_to_image_directory',
+
 Or
 image field: images/users/avatar.jpg
+
 'images_base_path' => '/'
 
 
@@ -43,7 +45,9 @@ Define model image property here
 Example
 
 'User' => 'avatar',
+
 'Article' => 'featured_image',
+
 'Product' => 'image'
 
 etc.
