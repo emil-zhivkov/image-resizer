@@ -8,7 +8,7 @@ This version works onli with photos stored in public directory
 
 ## Install package
 ``` bash
-composer require emil-zhivkov/image-resizer @stable
+composer require emil-zhivkov/image-resizer @dev
 
 
 ```
