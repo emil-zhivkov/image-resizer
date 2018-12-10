@@ -6,7 +6,7 @@ resize existing images on server and save it in custom directory. You can use th
 
 ## Install package
 ``` bash
-
+composer require emil-zhivkov/image-resizer
 
 
 ```

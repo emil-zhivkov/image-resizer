@@ -8,8 +8,8 @@
 
 return [
 
-    // define paths
-    'images_base_path' => '/images/',
+    // if full path to image is saved in your table - leave blank, if you save only filename put full path to image here :)
+    'images_base_path' => '',
 
     // define image sizes. ths sizes myst be defined in ImageTrait too.
     'image_sizes' => [
