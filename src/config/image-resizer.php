@@ -7,10 +7,12 @@
  */
 
 return [
-
+    // section 1
     // if full path to image is saved in your table - leave blank, if you save only filename put full path to image here :)
     'images_base_path' => '',
 
+
+    // section 2
     // define image sizes. ths sizes myst be defined in ImageTrait too.
     'image_sizes' => [
         'thumbnail' => ['width' => 64 , 'height'=>64],
@@ -20,6 +22,8 @@ return [
         'cover' => ['width' => 710, 'height'=>400],
     ],
 
+
+    //section 2
     // define models`s image property
     'object_images' => [
      // examples
