@@ -10,6 +10,11 @@
             "email": "emo.zhivkov@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "EmilZhivkov\\ImageResizer\\": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "extra": {
         "laravel": {
