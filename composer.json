@@ -1,0 +1,21 @@
+{
+    "name": "emil-zhivkov/image-resizer",
+    "description": "resize images and keep aspect ration",
+    "require": {
+        "intervention/image": "^2.4@dev"
+    },
+    "authors": [
+        {
+            "name": "Emil Zhivkov",
+            "email": "emo.zhivkov@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "EmilZhivkov\\ImageResizer\\ImageResizerServiceProvider"
+            ]
+        }
+    }
+}
