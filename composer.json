@@ -3,7 +3,7 @@
     "description": "resize images and keep aspect ration",
     "require": {
         "php": ">=5.4.0",
-        "intervention/image": "^2.4@dev"
+        "intervention/image": "^2.*"
     },
     "authors": [
         {
