@@ -10,6 +10,7 @@
             "email": "emo.zhivkov@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "extra": {
         "laravel": {
             "providers": [
