@@ -15,8 +15,14 @@ composer require emil-zhivkov/image-resizer @dev
 
 config/app.php
 ``` bash
- EmilZhivkov\ImageResizer\ImageResizerServiceProvider,
+ EmilZhivkov\ImageResizer\ImageResizerServiceProvider::class,
 ```
+
+## Publishing configuration file
+``` bash
+php artisan vendor:publish
+```
+
 
 
 ## Configuration file
