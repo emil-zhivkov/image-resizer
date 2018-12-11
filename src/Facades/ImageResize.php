@@ -33,7 +33,7 @@ class ImageResize  extends Facade
 
 
         //get sizes
-        $sizes = config('images.image_sizes');
+        $sizes = config('image-resizer.image_sizes');
         if ($images_type_size and array_key_exists($images_type_size, $sizes)) {
             $size = $sizes[$images_type_size];
         } else {
@@ -90,8 +90,8 @@ class ImageResize  extends Facade
     {
         $model_name = class_basename($object);
 
-        if (array_key_exists($model_name, config('images.object_images'))) {
-            $column = config('images.object_images.' . $model_name);
+        if (array_key_exists($model_name, config('image-resizer.object_images'))) {
+            $column = config('image-resizer.object_images.' . $model_name);
             $filename = $object->$column;
             if (!empty($filename)) {
                 return self::resizePhoto($filename, $images_type_size);

@@ -13,14 +13,12 @@ class ImageResizerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        require __DIR__ . '/Http/routes.php';
+
 
         $this->publishes([
             __DIR__. '/config/image-resizer.php' => config_path('image-resizer.php')
         ], 'config');
-        $this->publishes([
-            __DIR__ . '/Facades' => app_path('Helpers/'),
-        ], 'helpers');
+
     }
 
     /**
