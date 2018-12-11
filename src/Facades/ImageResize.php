@@ -12,9 +12,6 @@ use Illuminate\Support\Facades\Facade;
 class ImageResize  extends Facade
 {
 
-
-
-
     static function resizePhoto($fileName, $images_type_size = null)
     {
 
@@ -22,7 +19,7 @@ class ImageResize  extends Facade
         $array = explode('/', $fileName);
         $fileName = end($array);
         array_pop($array);
-        $filePath = public_path() . $base_path . implode('/', $array) . '/';
+        $filePath = public_path() .'/'. $base_path . implode('/', $array) . '/';
         $realFilePath = $base_path . implode('/', $array) . '/';
         $realResizedFilePath = $base_path . implode('/', $array) . '/' . $images_type_size . '/';
         $resized_file_path = $filePath . $images_type_size . '/';
@@ -105,9 +102,12 @@ class ImageResize  extends Facade
     private static function defaultPhoto($type = null)
     {
         if($type){
-            return '/images/' . $type . '_default.jpg';
+            $fallbacks = config('image-resizer.fallback_photos');
+            if(array_key_exists($type, $fallbacks)){
+                return $fallbacks[$type];
+            }
         }
-        return '/images/cover_default.jpg';
+        return config('image-resizer.default_fallback_photo');
     }
 
     private static function prepareFolders($file_path, $dirname)
@@ -122,7 +122,7 @@ class ImageResize  extends Facade
 
     public static function unlinkPhotos($path,$filename)
     {
-        $directories = config('images.image_sizes');
+        $directories = config('image-resizer.image_sizes');
         if (file_exists($path.$filename)){
             unlink($path.$filename);
         }

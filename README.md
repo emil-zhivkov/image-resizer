@@ -47,8 +47,6 @@ You can change image sizes here. Aspect ratio keep the same as original photo
 You can define sizes here. And you can add you own type of size but must to extend ImageTrait and add new mutator there.
 
 
-Section 3
-
 Define model image property here
 Example
 
@@ -60,5 +58,8 @@ Example
 
 etc.
 
+
+Section 3
+define publick path to your fallback images.
 
 thats all folks, enjoy ! 

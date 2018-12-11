@@ -9,7 +9,7 @@
 return [
     // section 1
     // if full path to image is saved in your table - leave blank, if you save only filename put full path to image here :)
-    'images_base_path' => '',
+    'images_base_path' => '/',
 
 
     // section 2
@@ -30,4 +30,17 @@ return [
 //        'User' => 'avatar',
 //        'Article' => 'image',
     ],
+
+
+    //section 3
+    //define path to fallback photos
+    'fallback_photos' => [
+//        'thumbnail' => 'public_path_to_image_with_suitable_size',
+//        'small_avatar' => '',
+//        'avatar' => '',
+//        'middle' => '',
+//        'cover' => '',
+    ],
+
+    'default_fallback_photo' => 'publick_path_to_default_fallback_photo',
 ];
