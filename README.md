@@ -62,4 +62,31 @@ etc.
 Section 3
 define publick path to your fallback images.
 
+##Usage
+Exmple:
+
+```php
+<?php
+
+namespace App\Models;
+
+
+use EmilZhivkov\ImageResizer\Traits\ImageTrait;
+use Illuminate\Notifications\Notifiable;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+
+class User extends Authenticatable
+{
+    use Notifiable;
+    use ImageTrait;
+}
+```
+
+```php
+    $user = User::find($id);
+    $user->small_avatar_image;
+  
+```
+object property is combination of image_sizes key from configuration file config/image-resizer.php and '_image' 
+
 thats all folks, enjoy ! 
