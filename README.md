@@ -25,7 +25,7 @@ php artisan vendor:publish
 
 
 
-## Configuration file
+## Configuration file config/image-resizer.php
 
 Section 1
 
@@ -88,5 +88,7 @@ class User extends Authenticatable
   
 ```
 object property is combination of image_sizes key from configuration file config/image-resizer.php and '_image' 
+
+When you call objects image, if image exist will automatically return or module will resize and save new image in proper directory.
 
 thats all folks, enjoy ! 
