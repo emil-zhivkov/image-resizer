@@ -60,7 +60,7 @@ etc.
 
 
 Section 3
-define publick path to your fallback images.
+define public path to your fallback images.
 
 ##Usage
 Exmple:
